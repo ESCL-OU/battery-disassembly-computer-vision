@@ -10,3 +10,6 @@
 # Ignore build
 
 **/build
+
+# Ignore vscode configuration
+.vscode
