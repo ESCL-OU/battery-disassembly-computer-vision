@@ -26,3 +26,10 @@ https://www.youtube.com/watch?v=uFnqLFznuZU&ab_channel=TolgaBirdal
 Setup workspace on a new laptop
 
 https://gazebosim.org/docs/latest/fuel_insert/
+
+
+### September 3rd, 2025
+
+https://gazebosim.org/docs/latest/sdf_worlds/
+
+https://gazebosim.org/docs/latest/sensors/
