@@ -33,3 +33,9 @@ https://gazebosim.org/docs/latest/fuel_insert/
 https://gazebosim.org/docs/latest/sdf_worlds/
 
 https://gazebosim.org/docs/latest/sensors/
+
+### September 8th 2025
+
+https://gazebosim.org/docs/latest/building_robot/
+
+https://gazebosim.org/docs/latest/moving_robot/
