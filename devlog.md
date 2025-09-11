@@ -34,8 +34,32 @@ https://gazebosim.org/docs/latest/sdf_worlds/
 
 https://gazebosim.org/docs/latest/sensors/
 
-### September 8th 2025
+### September 8th, 2025
 
 https://gazebosim.org/docs/latest/building_robot/
 
 https://gazebosim.org/docs/latest/moving_robot/
+
+### September 11th, 2025
+
+https://gazebosim.org/docs/latest/ros2_integration/
+
+important revision, we must use gazebo harmonic because we are going to use ros2 jazzy (ubuntu 24.04)
+
+https://gazebosim.org/docs/harmonic/install_ubuntu/
+
+https://index.ros.org/p/ros_gz_sim/
+
+https://github.com/gazebosim/ros_gz/tree/jazzy
+
+```
+sudo sh -c 'echo "deb [arch=$(dpkg --print-architecture)] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'
+curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
+sudo apt-get update
+```
+
+```
+sudo apt install ros-jazzy-ros-gz
+```
+
+Getting some ros2 environment stuff setup for an example project. Still working on getting the ROS2 <-> Gazebo bridge setup and running.

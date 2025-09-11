@@ -11,5 +11,11 @@
 
 **/build
 
+# Ignore ros2 build install log
+
+**/install
+
+**/log
+
 # Ignore vscode configuration
 .vscode

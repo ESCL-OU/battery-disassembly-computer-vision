@@ -1,0 +1,11 @@
+<launch>
+  <gz_server
+    world_sdf_file="$(find-pkg-share worlds)/worlds/example_world.sdf">
+  </gz_server>
+
+  <!-- <ros_gz_bridge bridge_name="example_bridge">
+    <topic ros_topic_name="/cmd_vel_ros" gz_topic_name="/cmd_vel"
+    lazy="false" direction="GZ_TO_ROS" qos_profile="CLOCK" />
+
+  </ros_gz_bridge> -->
+</launch>
