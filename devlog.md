@@ -63,3 +63,11 @@ sudo apt install ros-jazzy-ros-gz
 ```
 
 Getting some ros2 environment stuff setup for an example project. Still working on getting the ROS2 <-> Gazebo bridge setup and running.
+
+### September 12th, 2025
+
+https://stackoverflow.com/questions/65514366/visual-studio-code-includepath-issue-with-ros-headers
+
+https://github.com/ros2/rviz/issues/1111 -> not really necessary, fixes warning when launching gazebo from cli
+
+https://docs.nav2.org/setup_guides/sensors/setup_sensors_gz.html

@@ -3,9 +3,16 @@
     world_sdf_file="$(find-pkg-share worlds)/worlds/example_world.sdf">
   </gz_server>
 
-  <!-- <ros_gz_bridge bridge_name="example_bridge">
-    <topic ros_topic_name="/cmd_vel_ros" gz_topic_name="/cmd_vel"
-    lazy="false" direction="GZ_TO_ROS" qos_profile="CLOCK" />
+  <ros_gz_bridge bridge_name="example_bridge">
+    <topic
+      ros_topic_name="/cmd_vel_ros"
+      gz_topic_name="/cmd_vel"
+      ros_type_name="geometry_msgs/msg/Twist"
+      gz_type_name="gz.msgs.Twist"
+      lazy="false"
+      direction="ROS_TO_GZ" />
 
-  </ros_gz_bridge> -->
+  </ros_gz_bridge>
+
+  <node pkg="twist_publisher" exec="twist_publisher" />
 </launch>
