@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <sdf version="1.10">
-  <world name="car_world">
+  <world name="example_world">
     <physics name="1ms" type="ignored">
       <max_step_size>0.001</max_step_size>
       <real_time_factor>1.0</real_time_factor>
@@ -16,6 +16,10 @@
     <plugin
       filename="gz-sim-scene-broadcaster-system"
       name="gz::sim::systems::SceneBroadcaster">
+    </plugin>
+    <plugin
+      filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors">
     </plugin>
     <!-- Moving Forward-->
     <plugin filename="gz-sim-triggered-publisher-system"
@@ -98,7 +102,7 @@
       </link>
     </model>
 
-    <model name='vehicle blue' canonical_link='chassis'>
+    <model name='vehicle_blue' canonical_link='chassis'>
       <plugin
         filename="gz-sim-diff-drive-system"
         name="gz::sim::systems::DiffDrive">
@@ -256,7 +260,7 @@
       <link name="camera_link">
         <pose relative_to='__model__'>1.6 0 0.6 0 0 0</pose>
         <visual name='visual'>
-          <origin xyz="0 0 0" rpy="0 0 0" />
+          <pose>0 0 0 0 0 0</pose>
           <geometry>
             <box>
               <size>0.2 0.5 0.2</size>
@@ -276,7 +280,26 @@
             </box>
           </geometry>
         </collision>
+
+        <sensor name="camera" type="camera">
+          <camera>
+            <horizontal_fov>1.047</horizontal_fov>
+            <image>
+              <width>320</width>
+              <height>240</height>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>100</far>
+            </clip>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+          <visualize>true</visualize>
+        </sensor>
       </link>
+
+
       <!--joints-->
       <joint name='left_wheel_joint' type='revolute'>
         <pose relative_to='left_wheel' />
@@ -311,5 +334,13 @@
         <child>camera_link</child>
       </joint>
     </model>
+
+    <include>
+      <name>Barrel</name>
+      <pose>5 0 0 0 0 0</pose>
+      <uri>
+        https://fuel.gazebosim.org/1.0/OpenRobotics/models/Construction Barrel
+      </uri>
+    </include>
   </world>
 </sdf>

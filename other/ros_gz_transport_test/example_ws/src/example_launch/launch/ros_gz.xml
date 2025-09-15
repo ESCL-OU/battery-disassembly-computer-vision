@@ -12,7 +12,16 @@
       lazy="false"
       direction="ROS_TO_GZ" />
 
+    <topic
+      ros_topic_name="/images_raw"
+      gz_topic_name="/world/example_world/model/vehicle_blue/link/camera_link/sensor/camera/image"
+      ros_type_name="sensor_msgs/msg/Image"
+      gz_type_name="gz.msgs.Image"
+      lazy="false"
+      direction="GZ_TO_ROS" />
   </ros_gz_bridge>
 
   <node pkg="twist_publisher" exec="twist_publisher" />
+
+  <node pkg="image_subscriber" exec="image_subscriber" emulate_tty="true"/>
 </launch>

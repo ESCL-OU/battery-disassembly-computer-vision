@@ -71,3 +71,13 @@ https://stackoverflow.com/questions/65514366/visual-studio-code-includepath-issu
 https://github.com/ros2/rviz/issues/1111 -> not really necessary, fixes warning when launching gazebo from cli
 
 https://docs.nav2.org/setup_guides/sensors/setup_sensors_gz.html
+
+### September 15th, 2025
+
+Notes on ros gazebo bridge
+
+Get the gazebo topic name by running `gz topic -l`
+
+Get the gazebo topic message type by running `gz topic -i -t <topic name>`
+
+Match the gazebo type with a ros type by looking at https://docs.ros.org/en/rolling/p/ros_gz_bridge/
