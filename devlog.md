@@ -66,6 +66,22 @@ Getting some ros2 environment stuff setup for an example project. Still working 
 
 ### September 12th, 2025
 
+Notes on developing ROS2 nodes in C++ with vscode:
+
+In the ubuntu CLI
+
+Source your ros2 install, for example `source /opt/ros/jazzy/setup.bash`
+
+cd to your workspace directory
+
+Build your workspace if it isn't built already
+
+run `source install/setup.bash`
+
+run `code ./`
+
+You should see intellisense for C++ ROS2 libraries
+
 https://stackoverflow.com/questions/65514366/visual-studio-code-includepath-issue-with-ros-headers
 
 https://github.com/ros2/rviz/issues/1111 -> not really necessary, fixes warning when launching gazebo from cli
@@ -81,3 +97,9 @@ Get the gazebo topic name by running `gz topic -l`
 Get the gazebo topic message type by running `gz topic -i -t <topic name>`
 
 Match the gazebo type with a ros type by looking at https://docs.ros.org/en/rolling/p/ros_gz_bridge/
+
+Receiving sensor_msgs/msg/Image images from gazebo -> ROS
+
+### September 17th, 2025
+
+https://index.ros.org/p/cv_bridge/#jazzy
