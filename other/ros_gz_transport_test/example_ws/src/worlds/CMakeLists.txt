@@ -8,7 +8,13 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 
+install(PROGRAMS 
+  setup/environment.bash
+  DESTINATION share/${PROJECT_NAME}/setup
+)
+
 install(DIRECTORY
+  assets
   worlds
   DESTINATION share/${PROJECT_NAME}/
 )

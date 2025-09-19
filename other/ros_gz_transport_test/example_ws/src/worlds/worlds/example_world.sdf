@@ -342,5 +342,17 @@
         https://fuel.gazebosim.org/1.0/OpenRobotics/models/Construction Barrel
       </uri>
     </include>
+
+    <include>
+      <name>Coke</name>
+      <pose>5 1 0 0 0 0</pose>
+      <uri>model://Coke</uri>
+    </include>
+
+    <include>
+      <name>STL_GZ</name>
+      <pose>5 3 0 0 0 0</pose>
+      <uri>model://STL_GZ</uri>
+    </include>
   </world>
 </sdf>
