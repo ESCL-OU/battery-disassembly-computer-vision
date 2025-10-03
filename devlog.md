@@ -103,3 +103,12 @@ Receiving sensor_msgs/msg/Image images from gazebo -> ROS
 ### September 17th, 2025
 
 https://index.ros.org/p/cv_bridge/#jazzy
+
+### October 3rd, 2025
+
+https://docs.opencv.org/4.x/d9/d25/group__surface__matching.html looks really promising,
+will have to wait to test with point cloud training data
+
+Installed matplot++, hopefully for visualizing point cloud data. 
+
+https://alandefreitas.github.io/matplotplusplus/integration/install/build-from-source/build-and-install/

@@ -290,9 +290,24 @@
             </image>
             <clip>
               <near>0.1</near>
-              <far>100</far>
+              <far>100.0</far>
             </clip>
           </camera>
+          <always_on>1</always_on>
+          <update_rate>30</update_rate>
+          <visualize>true</visualize>
+        </sensor>
+
+        <sensor name="depth_camera" type="depth">
+          <horizontal_fov>1.047</horizontal_fov>
+          <image>
+            <width>320</width>
+            <height>240</height>
+          </image>
+          <clip>
+            <near>0.1</near>
+            <far>100.0</far>
+          </clip>
           <always_on>1</always_on>
           <update_rate>30</update_rate>
           <visualize>true</visualize>
