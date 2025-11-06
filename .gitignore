@@ -19,3 +19,6 @@
 
 # Ignore vscode configuration
 .vscode
+
+# all large .ply files
+**.ply
