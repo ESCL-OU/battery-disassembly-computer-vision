@@ -22,3 +22,5 @@
 
 # all large .ply files
 **.ply
+
+Scans/**
