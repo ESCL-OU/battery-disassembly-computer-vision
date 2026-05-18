@@ -1,0 +1,4 @@
+ultralytics
+zivid
+open3d
+trimesh
